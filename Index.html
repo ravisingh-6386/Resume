@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi Singh - Resume</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f4ef;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #0f766e;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f7f4ef 0%, #eef2ff 100%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .resume {
+      max-width: 960px;
+      margin: 32px auto;
+      padding: 32px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2.4rem;
+      letter-spacing: -0.03em;
+      color: #111827;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 14px;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+
+    .entry {
+      margin-bottom: 14px;
+    }
+
+    .entry h3 {
+      margin: 0 0 4px;
+      font-size: 1.05rem;
+      color: #111827;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    .skill-card {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+
+    .skill-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    @media (max-width: 640px) {
+      .resume {
+        margin: 0;
+        border-radius: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .meta {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header>
+      <h1>Ravi Singh</h1>
+      <div class="contact">
+        <span>+91 9555131042</span>
+        <span>|</span>
+        <a href="mailto:ravisingh98199@gmail.com">Gmail</a>
+        <span>|</span>
+        <a href="https://github.com/ravisingh-6386" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span>|</span>
+        <a href="https://www.linkedin.com/in/ravi-singh-294b37327" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span>|</span>
+        <a href="https://leetcode.com/u/ravisingh98199" target="_blank" rel="noopener noreferrer">LeetCode</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Computer Science Engineering student with hands-on experience in full-stack web development and AI-driven applications. Proficient in HTML, CSS, JavaScript, React, Node.js, with a solid foundation in Data Structures &amp; Algorithms and real-time systems using AI APIs, aspiring to become a Software Engineer building scalable, high-quality solutions.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="meta">
+          <span><strong>B.Tech in Computer Science Engineering</strong>, Sharda University</span>
+          <span>CGPA: 8.8 | 2024 - Present</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="meta">
+          <span><strong>Class XII</strong>, UP Board, St. John Model School</span>
+          <span>72.3% | 2023</span>
+        </div>
+      </div>
+      <div class="entry">
+        <div class="meta">
+          <span><strong>Class X</strong>, UP Board, St. John Model School</span>
+          <span>85.5% | 2021</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <strong>Programming Languages</strong>
+          Java [DSA], Python, C
+        </div>
+        <div class="skill-card">
+          <strong>DevOps &amp; Tools</strong>
+          Git, Docker, GitHub, VS Code
+        </div>
+        <div class="skill-card">
+          <strong>Soft Skills</strong>
+          Communication, Problem-solving, Adaptability, Teamwork, Critical thinking, Leadership
+        </div>
+        <div class="skill-card">
+          <strong>Frontend</strong>
+          React.js, TypeScript, HTML/CSS, Tailwind CSS, JavaScript
+        </div>
+        <div class="skill-card">
+          <strong>Backend</strong>
+          Node.js, Express.js, JWT, REST APIs
+        </div>
+        <div class="skill-card">
+          <strong>Databases</strong>
+          MongoDB, Mongoose, SQL
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="entry">
+        <h3>Banking Management System (Website Project)</h3>
+        <div class="meta">
+          <span>June 2024</span>
+        </div>
+        <ul>
+          <li>Developed a web-based banking management system enabling users to easily create accounts, deposit, withdraw, and view account details.</li>
+          <li>Implemented core banking logic using Linked List for efficient data handling, with a responsive frontend built using HTML, CSS, and JavaScript.</li>
+          <li>Designed with a simple and user-friendly interface to ensure smooth navigation and basic banking operations.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>AI Interview Platform (Real-Time Voice-Based Mock Interview System)</h3>
+        <div class="meta">
+          <span>2025</span>
+        </div>
+        <ul>
+          <li>Built a real-time AI-powered interview platform enabling B.Tech students to practice mock interviews across domains like DSA, Frontend, and Backend etc.</li>
+          <li>Implemented voice-based interaction where users answer verbally and an AI interviewer asks questions, evaluates responses, and provides instant feedback.</li>
+          <li>Developed using React, Node.js, APIs (Speech-to-Text, GPT, Text-to-Speech) to simulate realistic interview experiences with scoring and analytics.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>MERN JWT Authentication System (Full Stack Web Application)</h3>
+        <div class="meta">
+          <span>March 2026</span>
+        </div>
+        <ul>
+          <li>Designed and developed a secure authentication system with user signup, login, and protected routes using JWT-based authorization.</li>
+          <li>Integrated password hashing (bcrypt) and middleware-based route protection to enhance application security and access control.</li>
+          <li>Built REST APIs with Node.js and Express.js, managed user data with MongoDB, and connected with React frontend for dynamic UI interaction.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications &amp; Achievements</h2>
+      <ul>
+        <li>Ideathon Event - IdeaSurge, Sharda University | 2024</li>
+        <li>Data Structures and Algorithms, Udemy Platform | June-July 2025</li>
+        <li>Smart India Hackathon (SIH) - Participant, Sharda University | 2025</li>
+        <li>SUSTAIN-A-THON Hackathon - Participant, Sharda University | 2025</li>
+        <li>CodeXplosion Hackathon - Participant (5th Rank), Sharda University | 2026</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
